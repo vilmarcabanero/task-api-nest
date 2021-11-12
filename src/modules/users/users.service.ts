@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { USERS } from '@schemas';
+import { USERS } from '../../@schemas';
 import { Model } from 'mongoose';
 import { IUser } from './interfaces/user.interface';
 import { CreateUserDto } from './dtos/create-user.dto';

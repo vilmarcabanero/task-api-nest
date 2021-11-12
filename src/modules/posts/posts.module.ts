@@ -4,7 +4,7 @@ import { PostsService } from './posts.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PassportModule } from '@nestjs/passport';
 import { PostsMapper } from './posts.mapper';
-import { POSTS } from '@schemas';
+import { POSTS } from '../../@schemas';
 
 const Schemas = [POSTS]
 

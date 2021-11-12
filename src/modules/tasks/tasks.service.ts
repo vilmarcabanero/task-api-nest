@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { TASKS } from '@schemas';
+import { TASKS } from '../../@schemas';
 import { Model, ObjectId } from 'mongoose';
 import { ITask } from './interfaces/tasks.interface';
 import { TaskDto } from './dtos/task.dto';

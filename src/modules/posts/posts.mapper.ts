@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
-import { IMapResponse } from '@core/ui-components';
-import { GenericUiComponent } from '@core/ui-components/generic.component';
+import { IMapResponse } from '../../@core/ui-components';
+import { GenericUiComponent } from '../../@core/ui-components/generic.component';
 
 @Injectable()
 export class PostsMapper {

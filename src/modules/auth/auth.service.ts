@@ -5,8 +5,8 @@ import { IJwtPayload } from './interfaces/jwt-payload.interface';
 import { IUser } from '../users/interfaces/user.interface';
 import { CreateUserDto } from '../users/dtos/create-user.dto';
 import { LoginUserDto } from '../users/dtos/login-user.dto';
-import { PasswordService } from '@core/services/password.service';
-import { ConfigService } from '@core/config/config.service';
+import { PasswordService } from '../../@core/services/password.service';
+import { ConfigService } from '../../@core/config/config.service';
 import to from 'await-to-js';
 
 @Injectable()

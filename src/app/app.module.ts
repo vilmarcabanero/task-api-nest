@@ -7,7 +7,7 @@ import { routes } from './app.routes';
 import { ConfigModule } from '../@core/config/config.module';
 import { ConfigService } from '../@core/config/config.service';
 import { UploadModule } from '../modules/upload/upload.module';
-import { CoreModule } from '@core/core.module';
+import { CoreModule } from '../@core/core.module';
 import { UsersModule } from '../modules/users/users.module';
 import { AuthModule } from '../modules/auth/auth.module';
 import { PostsModule } from '../modules/posts/posts.module';

@@ -5,7 +5,7 @@ import { PassportModule } from '@nestjs/passport';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app/app.module';
 
-import { AllExceptionsFilter } from '@core/utils/exceptions.filter';
+import { AllExceptionsFilter } from './@core/utils/exceptions.filter';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { ValidationPipe } from '@nestjs/common';
 
