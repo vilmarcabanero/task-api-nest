@@ -11,6 +11,7 @@ import { CoreModule } from '@core/core.module';
 import { UsersModule } from '../modules/users/users.module';
 import { AuthModule } from '../modules/auth/auth.module';
 import { PostsModule } from '../modules/posts/posts.module';
+import { TasksModule } from '../modules/tasks/tasks.module';
 
 const MongooseConfig = {
   imports: [ConfigModule],
@@ -34,6 +35,7 @@ const MongooseConfig = {
     AuthModule,
     UsersModule,
     PostsModule,
+    TasksModule
   ],
   controllers: [AppController],
   providers: [AppService],

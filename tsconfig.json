@@ -8,7 +8,7 @@
     "target": "es2019",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./src",
+    "baseUrl": "./",
     "paths": {
       "@lib/*": ["src/@lib/*"],
       "@core/*": ["src/@core/*"],

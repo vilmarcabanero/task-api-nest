@@ -13,9 +13,9 @@ const STRINGS = {
   },
 
   EMAIL_IN_USE: {
-    en: 'Email already in use',
-    fr: 'Email already in use',
-    ar: 'Email already in use',
+    en: 'Email already in use.',
+    fr: 'Email already in use.',
+    ar: 'Email already in use.',
   },
 
   SERVER_ERROR: {

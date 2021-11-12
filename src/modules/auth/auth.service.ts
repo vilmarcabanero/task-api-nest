@@ -25,7 +25,7 @@ export class AuthService {
     // }
 
     if (!user) {
-      throw { message: `${userDto.email} is not yet registered.`, status: HttpStatus.UNAUTHORIZED };
+      throw { message: `Email is not yet registered.`, status: HttpStatus.UNAUTHORIZED };
     }
 
     const { hash } = this.passwordService.hash(userDto.password, user.salt);

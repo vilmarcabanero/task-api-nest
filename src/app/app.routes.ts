@@ -4,6 +4,7 @@ import { UploadModule } from '../modules/upload/upload.module';
 import { PostsModule } from '../modules/posts/posts.module';
 import { UsersModule } from '../modules/users/users.module';
 import { AuthModule } from '../modules/auth/auth.module';
+import { TasksModule } from '~src/modules/tasks/tasks.module';
 
 export const routes: Routes = [
   {
@@ -15,7 +16,9 @@ export const routes: Routes = [
 
       { path: '/upload', module: UploadModule },
 
-      { path: '/users', module: UsersModule },
+      { path: '/user', module: UsersModule },
+
+      { path: '/tasks', module: TasksModule },
     ],
   },
 ];
