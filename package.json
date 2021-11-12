@@ -52,7 +52,8 @@
     "rxjs": "^6.6.7",
     "swagger-ui-express": "^4.1.6",
     "tsconfig-paths": "3.9.0",
-    "xhelper": "^2.2.0"
+    "xhelper": "^2.2.0",
+    "typescript": "^4.3.5"
   },
   "devDependencies": {
     "@nestjs/testing": "^6.11.11",
