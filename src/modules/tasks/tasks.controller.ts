@@ -54,7 +54,7 @@ export class TasksController {
   }
 
   @Patch('archive')
-  async archiveCompleteTasks() {
+  async archiveCompleteTasks(): Promise<any> {
     return this.tasks.archiveCompleteTasks();
   }
 

@@ -16,7 +16,10 @@
       "@schemas": ["src/@schemas"],
       "~src/*": ["src/*"]
     },
-    "incremental": true
+    "incremental": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   },
   "exclude": ["node_modules", "scripts"]
 }

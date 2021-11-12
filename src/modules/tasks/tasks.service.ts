@@ -62,7 +62,7 @@ export class TasksService {
     return task;
   }
 
-  async archiveCompleteTasks() {
+  async archiveCompleteTasks(): Promise<any> {
     const res = await this.tasks.updateMany(
       { complete: true },
       { isActive: false },

@@ -21,7 +21,7 @@ export class UsersService {
     return this.usersModel.findById(createdUser._id);
   }
 
-  public findByEmail(email: string, forPasswordVerification = false): Promise<IUser> {
+  public findByEmail(email: string, forPasswordVerification = false): Promise<any> {
     let query = this.usersModel.findOne({ email });
 
     if (forPasswordVerification) {
@@ -31,7 +31,7 @@ export class UsersService {
     return query.lean().exec();
   }
 
-  public findById(userId: string, forJwtValidation = false): Promise<IUser> {
+  public findById(userId: string, forJwtValidation = false): Promise<any> {
     let query = this.usersModel.findById(userId);
 
     if (forJwtValidation) {
@@ -41,15 +41,15 @@ export class UsersService {
     return query.lean().exec();
   }
 
-  public addTokenCode(userId: string, code: string): Promise<IUser> {
-    return this.usersModel.findByIdAndUpdate(userId, { $push: { tokenCodes: code } }).lean().exec();
+  public addTokenCode(userId: string, code: string): Promise<any> {
+    return this.usersModel.findById(userId).lean().exec();
   }
 
-  public removeTokenCode(userId: string, code = 'all'): Promise<IUser> {
-    const update =
-      (code === 'all') ? { $set: { tokenCodes: [] } } : { $pull: { tokenCodes: code } };
+  public removeTokenCode(userId: string, code = 'all'): Promise<any> {
+    // const update =
+    //   (code === 'all') ? { $set: { tokenCodes: [] } } : { $pull: { tokenCodes: code } };
 
-    return this.usersModel.findByIdAndUpdate(userId, update).lean().exec();
+    return this.usersModel.findById(userId).lean().exec();
   }
 
 }
