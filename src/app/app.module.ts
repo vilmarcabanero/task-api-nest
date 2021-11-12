@@ -6,7 +6,6 @@ import { RouterModule } from 'nest-router';
 import { routes } from './app.routes';
 import { ConfigModule } from '../@core/config/config.module';
 import { ConfigService } from '../@core/config/config.service';
-import { UploadModule } from '../modules/upload/upload.module';
 import { CoreModule } from '../@core/core.module';
 import { UsersModule } from '../modules/users/users.module';
 import { AuthModule } from '../modules/auth/auth.module';
@@ -31,7 +30,6 @@ const MongooseConfig = {
     MongooseModule.forRootAsync(MongooseConfig),
     RouterModule.forRoutes(routes),
     CoreModule.forRoot(),
-    UploadModule,
     AuthModule,
     UsersModule,
     PostsModule,
